@@ -5,8 +5,9 @@ const themeButton = document.querySelector("#theme-btn");
 const deleteButton = document.querySelector("#delete-btn");
 
 let userText = null;
-const API_KEY = "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"; // Paste your API key here
 
+const API_KEY_BASE64 = "c2stbEpNTHJIWFR1ZWNMYmpCeFFSQUtUM0JsYmtGSjU4WXl1cnpHVzlaSEQ1ZXF0VlIx"; // API key của bạn dưới dạng Base64
+const API_KEY = atob(API_KEY_BASE64); // "Giải mã" API key từ Base64 về dạng ban đầu
 const loadDataFromLocalstorage = () => {
     // Load saved chats and theme from local storage and apply/add on the page
     const themeColor = localStorage.getItem("themeColor");
