@@ -33,7 +33,7 @@ const createChatElement = (content, className) => {
 }
 
 const getChatResponse = async (incomingChatDiv) => {
-    const API_URL = "https://api.openai.com/v1/chat/completions";
+    const API_URL = "https://api.openai.com/v1/completions";
     const pElement = document.createElement("p");
 
     // Define the properties and data for the API request
@@ -44,7 +44,7 @@ const getChatResponse = async (incomingChatDiv) => {
             "Authorization": `Bearer ${API_KEY}`
         },
         body: JSON.stringify({
-            model: "gpt-3.5-turbo",
+            model: "gpt-3.5-turbo-instruct",
             prompt: userText,
             max_tokens: 2048,
             temperature: 0.2,
