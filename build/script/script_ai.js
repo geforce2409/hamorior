@@ -1,7 +1,7 @@
 const chatInput = document.querySelector("#chat-input");
 const sendButton = document.querySelector("#send-btn");
 const chatContainer = document.querySelector(".chat-container");
-const themeButton = document.querySelector("#theme-btn");
+// const themeButton = document.querySelector("#theme-btn");
 const deleteButton = document.querySelector("#delete-btn");
 
 let userText = null;
@@ -13,11 +13,11 @@ const loadDataFromLocalstorage = () => {
     const themeColor = localStorage.getItem("themeColor");
 
     document.body.classList.toggle("light-mode", themeColor === "light_mode");
-    themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
+    // themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
 
     const defaultText = `<div class="default-text">
                             <h1>HAMORIOR AI</h1>
-                            <p>Chúng tôi sẽ gửi đến bạn những lời khuyên hữu ích nhằm giúp bạn thiết kế ngôi nhà mơ ước của riêng mình.<br>(Lịch sử chat của bạn sẽ được hiển thị ở đây)</p>
+                            <p>HÔM NAY TÔI CÓ THỂ GIÚP BẠN ĐIỀU GÌ?</p>
                         </div>`
 
     chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
@@ -128,12 +128,12 @@ deleteButton.addEventListener("click", () => {
     }
 });
 
-themeButton.addEventListener("click", () => {
-    // Toggle body's class for the theme mode and save the updated theme to the local storage 
-    document.body.classList.toggle("light-mode");
-    localStorage.setItem("themeColor", themeButton.innerText);
-    themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
-});
+// themeButton.addEventListener("click", () => {
+//     // Toggle body's class for the theme mode and save the updated theme to the local storage 
+//     document.body.classList.toggle("light-mode");
+//     localStorage.setItem("themeColor", themeButton.innerText);
+//     themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
+// });
 
 const initialInputHeight = chatInput.scrollHeight;
 

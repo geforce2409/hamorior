@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="../css/news.css" rel="stylesheet">
-    <title>Document</title>
+    <script src="../script/script.js" defer></script>
+    <title>Hamorior News</title>
 </head>
 <body>
     <div class="v82_233">
@@ -17,10 +19,6 @@
             <div class="v82_240"></div>
             <div class="name"></div>
         </div>
-        <div class="v82_242">
-            <span class="v82_243">RUSTIC</span>
-            <span class="v82_244">CẢM HỨNG TỪ MỘC MẠC</span>
-        </div>
         <div class="v82_245"></div>
         <div class="v82_246">
             <div class="name"></div>
@@ -32,32 +30,20 @@
             <div class="name"></div>
         </div>
         <div class="v82_256"></div>
-        <span class="v82_257">XU HƯỚNG</span>
-        <span class="v82_258">NHÀ ĐẸP</span>
-        <span class="v82_259">BỘ SƯU TẬP</span>
-        <span class="v82_260">LỐI SỐNG</span>
+        <span class="v82_257 clickable" onclick="dieu_huong_newstoindex()">XU HƯỚNG</span>
+        <span class="v82_258 clickable" onclick="dieu_huong_newstoindex()">NHÀ ĐẸP</span>
+        <span class="v82_259 clickable" onclick="dieu_huong_newstoindex()">BỘ SƯU TẬP</span>
+        <span class="v82_260 clickable" onclick="dieu_huong_newstoindex()">LỐI SỐNG</span>
         <div class="v82_261"></div>
         <div class="v82_262"></div>
-        <div class="v82_263"onclick="dieu_huong_ai()">
-            <script>
-                function dieu_huong_ai(){
-                    location.assign("./ai.html");
-                }
-            </script>
-        </div>
+        <div class="v82_263 clickable"onclick="dieu_huong_newstoai()"></div>
         <div class="name"></div>
-        <span class="v82_269">HAMORIOR</span>
+        <span class="v82_269 clickable" onclick="dieu_huong_newstoindex()">HAMORIOR</span>
         <span class="v82_270">ĐẶT BÁO </span>
         <div class="v82_271"></div>
         <div class="name"></div>
         <div class="v82_273">
-            <div class="v82_274" onclick="dieu_huong_index()">
-                <script>
-                    function dieu_huong_index(){
-                        location.assign("../index.html");
-                    }
-                </script>
-            </div>
+            <div class="v82_274" onclick="dieu_huong_newstoindex()"></div>
             <div class="v82_275"></div>
         </div>
         <div class="name"></div>
